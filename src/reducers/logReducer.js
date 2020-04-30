@@ -1,5 +1,5 @@
 import { GET_LOGS, SET_LOADING, LOGS_ERROR } from "../actions/types";
-initialState = {
+const initialState = {
   logs: null,
   current: null,
   loading: false,
