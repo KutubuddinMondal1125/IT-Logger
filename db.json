@@ -1,18 +1,74 @@
 {
   "logs": [
     {
-      "message": "005 hard drive fixed",
+      "id": 2,
+      "message": "007 work station fixed solved",
+      "tech": "Sara Wilson",
       "attention": false,
-      "tech": "John Doe",
-      "date": "2020-04-30T10:05:40.873Z",
-      "id": 1
+      "date": "2020-05-01T08:05:14.778Z"
     },
     {
+      "id": 3,
+      "message": "problem solved work station 0011",
+      "tech": "Sara Wilson",
+      "attention": false,
+      "date": "2020-05-01T08:02:15.072Z"
+    },
+    {
+      "id": 4,
+      "message": "004 hard drive fixed",
+      "tech": "Sam Smith",
+      "attention": false,
+      "date": "2020-05-01T08:03:00.840Z"
+    },
+    {
+      "id": 5,
       "message": "007 work station fixed",
+      "tech": "",
+      "attention": false,
+      "date": "2020-05-01T08:05:30.101Z"
+    },
+    {
+      "id": 6,
+      "message": "007 work station issue solved",
+      "tech": "John Doe",
+      "attention": false,
+      "date": "2020-05-01T11:39:14.678Z"
+    },
+    {
+      "id": 7,
+      "message": "005 hard drive got down",
+      "tech": "Sam Smith",
+      "attention": true,
+      "date": "2020-05-01T11:39:35.740Z"
+    },
+    {
+      "message": "0011 nic is down",
+      "attention": true,
+      "tech": "Sam Smith",
+      "date": "2020-05-01T11:38:54.040Z",
+      "id": 8
+    },
+    {
+      "message": "0025 data center failed",
       "attention": true,
       "tech": "Sara Wilson",
-      "date": "2020-04-30T10:07:15.720Z",
-      "id": 2
+      "date": "2020-05-01T11:40:20.934Z",
+      "id": 9
+    },
+    {
+      "message": "001 client post a report",
+      "attention": true,
+      "tech": "Sam Smith",
+      "date": "2020-05-01T11:40:50.872Z",
+      "id": 10
+    },
+    {
+      "message": "005 hard drive fixed",
+      "attention": false,
+      "tech": "Sam Smith",
+      "date": "2020-05-01T11:41:03.734Z",
+      "id": 11
     }
   ],
   "techs": [

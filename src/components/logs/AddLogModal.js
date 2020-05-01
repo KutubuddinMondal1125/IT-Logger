@@ -10,7 +10,7 @@ const AddLogModal = ({ addLog }) => {
   const [tech, setTech] = useState("");
 
   const onSubmit = () => {
-    if (message === "" && tech === "") {
+    if (message === "" || tech === "") {
       M.toast({ html: "Please Add a Message & Tech" });
     } else {
       const newLog = {
@@ -27,7 +27,7 @@ const AddLogModal = ({ addLog }) => {
       console.log(message, tech, attention);
       setMessage("");
       setTech("");
-      setAttention("");
+      setAttention(false);
     }
   };
 
@@ -53,6 +53,7 @@ const AddLogModal = ({ addLog }) => {
             <select
               name="tech"
               value={tech}
+              className="browser-default"
               onChange={(e) => setTech(e.target.value)}
             >
               <option value="" disabled>
