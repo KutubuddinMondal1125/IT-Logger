@@ -57,18 +57,18 @@
       "id": 9
     },
     {
-      "message": "001 client post a report",
-      "attention": true,
-      "tech": "Sam Smith",
-      "date": "2020-05-01T11:40:50.872Z",
-      "id": 10
-    },
-    {
       "message": "005 hard drive fixed",
       "attention": false,
       "tech": "Sam Smith",
       "date": "2020-05-01T11:41:03.734Z",
       "id": 11
+    },
+    {
+      "message": "0001 server broken down",
+      "attention": true,
+      "tech": "Sara Wilson",
+      "date": "2020-05-01T12:07:08.728Z",
+      "id": 12
     }
   ],
   "techs": [
