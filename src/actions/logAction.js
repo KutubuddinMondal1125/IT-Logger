@@ -10,7 +10,7 @@ import {
   CLEAR_CURRENT,
 } from "./types";
 
-// Getting logs from server
+// Getting logs from Server
 export const getLogs = () => async (dispatch) => {
   try {
     setLoading();
@@ -24,12 +24,12 @@ export const getLogs = () => async (dispatch) => {
   } catch (err) {
     dispatch({
       type: LOGS_ERROR,
-      payload: err.response.data,
+      payload: err.response.statusText,
     });
   }
 };
 
-// Add a new Log
+// Add a new Log to Server
 export const addLog = (log) => async (dispatch) => {
   try {
     setLoading();
@@ -51,12 +51,12 @@ export const addLog = (log) => async (dispatch) => {
   } catch (err) {
     dispatch({
       type: LOGS_ERROR,
-      payload: err.response.data,
+      payload: err.response.statusText,
     });
   }
 };
 
-// Update a log
+// Update a log from Server
 export const updateLog = (log) => async (dispatch) => {
   try {
     setLoading();
@@ -78,12 +78,12 @@ export const updateLog = (log) => async (dispatch) => {
   } catch (err) {
     dispatch({
       type: LOGS_ERROR,
-      payload: err.response.data,
+      payload: err.response.statusText,
     });
   }
 };
 
-// Delete a log
+// Delete a log to Server
 export const deleteLog = (id) => async (dispatch) => {
   try {
     setLoading();
@@ -98,7 +98,7 @@ export const deleteLog = (id) => async (dispatch) => {
   } catch (err) {
     dispatch({
       type: LOGS_ERROR,
-      payload: err.response.data,
+      payload: err.response.statusText,
     });
   }
 };
@@ -118,7 +118,7 @@ export const searchLogs = (text) => async (dispatch) => {
   } catch (err) {
     dispatch({
       type: LOGS_ERROR,
-      payload: err.response.data,
+      payload: err.response.statusText,
     });
   }
 };

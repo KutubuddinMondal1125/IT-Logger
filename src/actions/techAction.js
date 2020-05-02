@@ -6,7 +6,7 @@ import {
   TECHS_ERROR,
 } from "./types";
 
-// Get Techs from the server
+// Get Techs from the Server
 export const getTechs = () => async (dispatch) => {
   try {
     setLoading();
@@ -17,6 +17,54 @@ export const getTechs = () => async (dispatch) => {
     dispatch({
       type: GET_TECHS,
       payload: data,
+    });
+  } catch (err) {
+    dispatch({
+      type: TECHS_ERROR,
+      payload: err.response.statusText,
+    });
+  }
+};
+
+// Add a Tech to the Server
+export const addTechs = (tech) => async (dispatch) => {
+  try {
+    setLoading();
+
+    const res = await fetch("/techs", {
+      method: "POST",
+      body: JSON.stringify(tech),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    const data = await res.json();
+
+    dispatch({
+      type: ADD_TECH,
+      payload: data,
+    });
+  } catch (err) {
+    dispatch({
+      type: TECHS_ERROR,
+      payload: err.response.statusText,
+    });
+  }
+};
+
+// Delete a Tech from the Server
+export const deleteTech = (id) => async (dispatch) => {
+  try {
+    setLoading();
+
+    await fetch(`/techs/${id}`, {
+      method: "DELETE",
+    });
+
+    dispatch({
+      type: DELETE_TECH,
+      payload: id,
     });
   } catch (err) {
     dispatch({

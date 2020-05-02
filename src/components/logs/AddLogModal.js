@@ -21,12 +21,10 @@ const AddLogModal = ({ addLog }) => {
         tech,
         date: new Date(),
       };
-
       addLog(newLog);
-
       M.toast({ html: `Log added by ${tech}` });
 
-      console.log(message, tech, attention);
+      // Clear Fields
       setMessage("");
       setTech("");
       setAttention(false);
